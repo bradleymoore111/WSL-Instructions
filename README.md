@@ -1,8 +1,8 @@
 # Installation
-Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL<br>
-Extract Arch.zip to C:\Users\USERNAME\Documents\Arch<br>
-Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install<br>
-Run Arch.exe again to spawn a shell<br>
+- Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL
+- Extract Arch.zip to C:\Users\USERNAME\Documents\Arch
+- Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install
+- Run Arch.exe again to spawn a shell
 
 Add a new user
 ```
@@ -93,11 +93,11 @@ To allow unsigned powershell scripts, run
 
 After you finish, it is recommended to change the policy to something more secure
 ```
-Set-ExecutionPolicy remotesigned
+> Set-ExecutionPolicy remotesigned
 ```
 
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```
-Arch.exe clean
+> Arch.exe clean
 ```

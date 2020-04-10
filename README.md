@@ -83,8 +83,18 @@ Useful if you're going to spawn a shell from the start menu
 - Rename the shortcut to 'Arch Shell'
 
 # Increasing IO performance
-Disabling real time scanning of the WSL folders increases read/write access, but reduces security.<br>
+Disabling real time scanning of the WSL folders increases read/write access, but possibly reduces security.<br>
 https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52#file-excludewsl-ps1
+
+To allow unsigned powershell scripts, run
+```
+> Set-ExecutionPolicy unrestricted
+```
+
+After you finish, it is recommended to change the policy to something more secure
+```
+Set-ExecutionPolicy remotesigned
+```
 
 # Uninstalling Arch WSL
 Run the following in the command line.

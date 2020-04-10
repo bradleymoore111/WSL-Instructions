@@ -1,4 +1,4 @@
-# Basic Installation
+# Installation
 Extract Arch.zip to C:\Users\USERNAME\Documents\Arch
 Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install
 Run Arch.exe again to spawn a shell
@@ -27,7 +27,7 @@ $ sudo pacman-key --populate
 $ sudo pacman -Syyu base-devel wget git
 ```
 
-# Install AUR helper
+# AUR helper
 First install fakeroot-tcp, since systemd wont work here
 ```
 $ cd ~/
@@ -44,29 +44,44 @@ $ cd yay
 $ makepkg -si
 ```
 
-# X11 Forwarding (Allow gui from linux)
-install VcXsrv for windows
+# X11 Forwarding
+Allows spawning GUI or applications in Windows
+
+Install VcXsrv for windows
 https://sourceforge.net/projects/vcxsrv/
 
 On startup choose multiple windows, display 0, start no client, disable native opengl. Save the configuration to C:\Users\USERNAME\Documents
 
-enable x11 forwarding
+Enable X11 forwarding 
 ```
 $ echo export DISPLAY=:0 >> .bashrc
 ```
 
-# Create start menu shortcut for Arch.exe
-navigate to C:\Users\USERNAME\Documents\Arch
-right click Arch.exe and select copy
-make sure Hidden Items are shown in Windows Explorer
-navigate to C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
-right click -> Paste shortcut
-rename the shortcut to 'Arch Shell'
-
+To test if X11 forwarding is working
+```
+$ sudo pacman -S mesa-demos
+$ glxgears
+```
 # Automatically start VcXsrv
-navigate to C:\Users\USERNAME\Documents
-right click config.xlaunch and select copy
-make sure Hidden Items are shown in Windows Explorer
-navigate to C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-right click -> Paste shortcut
-rename the file and remove - shortcut
+Load your configuration on Windows startup
+- Navigate to C:\Users\USERNAME\Documents
+- Right click config.xlaunch and select copy
+- Make sure Hidden Items are shown in Windows Explorer
+- Navigate to C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+- Right click -> Paste shortcut
+- Rename the file and remove - shortcut
+
+# Start menu shortcut for Arch.exe
+Useful if you're going to spawn a shell from the start menu
+- Navigate to C:\Users\USERNAME\Documents\Arch
+- Right click Arch.exe and select copy
+- Make sure Hidden Items are shown in Windows Explorer
+- Navigate to C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
+- Right click -> Paste shortcut
+- Rename the shortcut to 'Arch Shell'
+
+# Uninstalling Arch WSL
+Run the following in the command line.
+```
+Arch.exe clean
+```

@@ -1,7 +1,8 @@
 # Installation
-Extract Arch.zip to C:\Users\USERNAME\Documents\Arch
-Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install
-Run Arch.exe again to spawn a shell
+Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL<br>
+Extract Arch.zip to C:\Users\USERNAME\Documents\Arch<br>
+Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install<br>
+Run Arch.exe again to spawn a shell<br>
 
 Add a new user
 ```
@@ -47,10 +48,11 @@ $ makepkg -si
 # X11 Forwarding
 Allows spawning GUI or applications in Windows
 
-Install VcXsrv for windows
+Install VcXsrv for windows<br>
 https://sourceforge.net/projects/vcxsrv/
 
-On startup choose multiple windows, display 0, start no client, disable native opengl. Save the configuration to C:\Users\USERNAME\Documents
+On startup choose multiple windows, display 0, start no client, disable native opengl.<br>
+Save the configuration to C:\Users\USERNAME\Documents
 
 Enable X11 forwarding 
 ```

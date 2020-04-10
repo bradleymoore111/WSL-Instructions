@@ -82,6 +82,10 @@ Useful if you're going to spawn a shell from the start menu
 - Right click -> Paste shortcut
 - Rename the shortcut to 'Arch Shell'
 
+# Increasing IO performance
+Disabling real time scanning of the WSL folders increases read/write access, but reduces security.<br>
+https://gist.github.com/noelbundick/9c804a710eb76e1d6a234b14abf42a52#file-excludewsl-ps1
+
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```

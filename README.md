@@ -101,6 +101,26 @@ After you finish, it is recommended to change the policy to something more secur
 ```
 > Set-ExecutionPolicy remotesigned
 ```
+# Additional WSL configurations
+Fixes the ugly green ntfs directories due to improper filesystem metadata<br>
+https://docs.microsoft.com/en-us/windows/wsl/wsl-config
+
+Create /etc/wsl.conf and copy the following into it
+```
+[automount]
+enabled = true
+root = /mnt/
+options = "metadata,umask=22,fmask=11"
+mountFsTab = false
+
+[network]
+generateHosts = true
+generateResolvConf = true
+```
+run the following in powershell as administrator to restart the WSL management service
+```
+> Restart-Service -Name "LxssManager"
+```
 
 # Disable tab-completion bell
 uncomment `set bell-style none` in /etc/inputrc

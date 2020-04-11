@@ -102,6 +102,9 @@ After you finish, it is recommended to change the policy to something more secur
 > Set-ExecutionPolicy remotesigned
 ```
 
+# Disable tab-completion bell
+uncomment `set bell-style none` in /etc/inputrc
+
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```

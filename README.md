@@ -1,3 +1,9 @@
+# Enable WSL
+Open powershell as administrator and run the following
+```
+> Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
+
 # Installation
 - Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL
 - Extract Arch.zip to C:\Users\USERNAME\Documents\Arch

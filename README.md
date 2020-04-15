@@ -136,6 +136,20 @@ $ git config --global core.autocrlf true
 # Recommended programs
 - bash-completion
 
+# Better right click context menu
+Fixes the missing icon and customizes text.
+
+Open regedit.exe and change the ownership of the following registry folders to Administrators (dont forget to hit `Check Names`):
+```
+Computer\HKEY_CLASSES_ROOT\Directory\Background\shell\WSL
+Computer\HKEY_CLASSES_ROOT\Directory\shell\WSL
+Computer\HKEY_CLASSES_ROOT\Drive\shell\WSL
+```
+Also `Enable inheritance` and `Replace all child object permissions entries...`<br>
+Ensure Administrators have `Full Control` checked.
+
+Import the appropriate registry file from the github source.
+
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```

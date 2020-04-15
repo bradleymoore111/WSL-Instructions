@@ -148,7 +148,7 @@ Computer\HKEY_CLASSES_ROOT\Drive\shell\WSL
 Also `Enable inheritance` and `Replace all child object permissions entries...`<br>
 Ensure Administrators have `Full Control` checked.
 
-Import the appropriate registry file from the github source.
+Import `Replace_With_Open_Arch_shell_here_context_menu.reg`.
 
 # Uninstalling Arch WSL
 Run the following in the command line.

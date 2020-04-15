@@ -125,6 +125,14 @@ run the following in powershell as administrator to restart the WSL management s
 # Disable tab-completion bell
 uncomment `set bell-style none` in /etc/inputrc
 
+# Managing git line endings
+https://code.visualstudio.com/docs/remote/troubleshooting#_resolving-git-line-ending-issues-in-containers-resulting-in-many-modified-files
+
+Git on windows usually has autocrlf enabled. You can just enable line ending conversion to match the windows setting.
+```
+$ git config --global core.autocrlf true
+```
+
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```

@@ -5,7 +5,7 @@ Open powershell as administrator and run the following
 ```
 
 # Installation
-- Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL
+- Download the latest Arch.zip release from the ArchWSL repo https://github.com/yuk7/ArchWSL/releases
 - Extract Arch.zip to C:\Users\USERNAME\Documents\Arch
 - Run C:\Users\USERNAME\Documents\Arch\Arch.exe the first time to install
 - Run Arch.exe again to spawn a shell

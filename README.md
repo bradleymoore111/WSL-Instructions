@@ -133,6 +133,9 @@ Git on windows usually has autocrlf enabled. You can just enable line ending con
 $ git config --global core.autocrlf true
 ```
 
+# Recommended programs
+- bash-completion
+
 # Uninstalling Arch WSL
 Run the following in the command line.
 ```
